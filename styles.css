@@ -8,7 +8,7 @@
   --zinc-400: #a1a1aa;
   --zinc-300: #d4d4d8;
 
-  --bg: var(--zinc-950);
+  --bg: var(--zinc-900);
   --text: var(--zinc-300);
   --text-muted: var(--zinc-400);
   --text-subtle: var(--zinc-500);
