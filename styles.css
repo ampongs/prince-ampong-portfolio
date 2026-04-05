@@ -150,12 +150,12 @@ body {
   color: var(--text-muted);
 }
 
-.history {
+.pov {
   padding-top: 0.25rem;
   border-top: 1px solid var(--zinc-800);
 }
 
-.history-label {
+.pov-label {
   margin: 0 0 1rem;
   font-size: 0.6875rem;
   font-weight: 500;
@@ -164,19 +164,13 @@ body {
   color: var(--text-subtle);
 }
 
-.history-list {
+.pov-body {
   margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  max-width: 36em;
   font-size: 0.9375rem;
+  line-height: 1.65;
+  font-weight: 400;
   color: var(--text-muted);
-}
-
-.history-list li {
-  padding: 0;
 }
 
 .find-me {
@@ -203,7 +197,6 @@ body {
   font-size: 0.9375rem;
 }
 
-.history-list a,
 .find-me-list a {
   color: var(--text-muted);
   text-decoration: none;
@@ -214,14 +207,40 @@ body {
     border-color 0.15s ease;
 }
 
-.history-list a:hover,
 .find-me-list a:hover {
   color: var(--text);
   border-bottom-color: var(--text-subtle);
 }
 
-.history-list a:focus-visible,
 .find-me-list a:focus-visible {
+  outline: 2px solid var(--zinc-400);
+  outline-offset: 3px;
+  border-bottom-color: transparent;
+}
+
+.cta {
+  padding-top: 0.25rem;
+}
+
+.cta-link {
+  display: inline-block;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--zinc-700);
+  padding-bottom: 0.05em;
+  transition:
+    color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.cta-link:hover {
+  color: var(--zinc-300);
+  border-bottom-color: var(--text-subtle);
+}
+
+.cta-link:focus-visible {
   outline: 2px solid var(--zinc-400);
   outline-offset: 3px;
   border-bottom-color: transparent;
