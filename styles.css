@@ -1,8 +1,17 @@
 :root {
-  --bg: #09090b;
-  --text: #d4d4d8;
-  --text-muted: #a1a1aa;
-  --text-subtle: #71717a;
+  /* Tailwind zinc scale */
+  --zinc-950: #09090b;
+  --zinc-900: #18181b;
+  --zinc-800: #27272a;
+  --zinc-700: #3f3f46;
+  --zinc-500: #71717a;
+  --zinc-400: #a1a1aa;
+  --zinc-300: #d4d4d8;
+
+  --bg: var(--zinc-950);
+  --text: var(--zinc-300);
+  --text-muted: var(--zinc-400);
+  --text-subtle: var(--zinc-500);
 }
 
 *,
@@ -13,6 +22,7 @@
 
 html {
   -webkit-text-size-adjust: 100%;
+  background-color: var(--bg);
 }
 
 body {
@@ -78,7 +88,7 @@ body {
 
 .work {
   padding-top: 0.25rem;
-  border-top: 1px solid #27272a;
+  border-top: 1px solid var(--zinc-800);
 }
 
 .work-label {
@@ -119,7 +129,7 @@ body {
 
 .about {
   padding-top: 0.25rem;
-  border-top: 1px solid #27272a;
+  border-top: 1px solid var(--zinc-800);
 }
 
 .about-label {
@@ -142,7 +152,7 @@ body {
 
 .history {
   padding-top: 0.25rem;
-  border-top: 1px solid #27272a;
+  border-top: 1px solid var(--zinc-800);
 }
 
 .history-label {
@@ -171,7 +181,7 @@ body {
 
 .find-me {
   padding-top: 0.25rem;
-  border-top: 1px solid #27272a;
+  border-top: 1px solid var(--zinc-800);
 }
 
 .find-me-label {
@@ -197,7 +207,7 @@ body {
 .find-me-list a {
   color: var(--text-muted);
   text-decoration: none;
-  border-bottom: 1px solid #3f3f46;
+  border-bottom: 1px solid var(--zinc-700);
   padding-bottom: 0.05em;
   transition:
     color 0.15s ease,
@@ -212,7 +222,7 @@ body {
 
 .history-list a:focus-visible,
 .find-me-list a:focus-visible {
-  outline: 2px solid #a1a1aa;
+  outline: 2px solid var(--zinc-400);
   outline-offset: 3px;
   border-bottom-color: transparent;
 }
