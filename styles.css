@@ -127,6 +127,16 @@ body {
   color: var(--text-muted);
 }
 
+.results {
+  margin: 1.75rem 0 0;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--zinc-800);
+  font-size: 0.8125rem;
+  line-height: 1.7;
+  color: var(--text-subtle);
+  letter-spacing: 0.01em;
+}
+
 .about {
   padding-top: 0.25rem;
   border-top: 1px solid var(--zinc-800);
@@ -244,4 +254,25 @@ body {
   outline: 2px solid var(--zinc-400);
   outline-offset: 3px;
   border-bottom-color: transparent;
+}
+
+.cta-secondary {
+  margin: 0.75rem 0 0;
+  font-size: 0.875rem;
+  color: var(--text-subtle);
+}
+
+.cta-secondary a {
+  color: var(--text-muted);
+  text-decoration: none;
+  border-bottom: 1px solid var(--zinc-700);
+  padding-bottom: 0.05em;
+  transition:
+    color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.cta-secondary a:hover {
+  color: var(--text);
+  border-bottom-color: var(--text-subtle);
 }
